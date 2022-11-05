@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <div>
-      <div>
+    <div >
+      <div class="rightWrapper">
         <div class="wrapper">
         <div>
           <h2 aria-level="2" role="heading">
@@ -22,7 +21,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
   
 <script>
@@ -40,10 +38,17 @@ export default {
   margin-block: 0.5rem;
   text-align: center;
 }
+.rightWrapper{
+  position: sticky;
+    top: 61px;
+}
 .wrapper{
   border-radius: 16px;
     border: 1px solid rgb(239, 243, 244);
     padding: 11px;
+}
+small{
+  color: rgb(83, 100, 113);
 }
 </style>
   

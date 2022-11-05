@@ -44,7 +44,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 60% 1fr;
-  margin-inline:1rem;
+  margin-inline:5rem;
   margin-top: 3px;
+  gap:1rem;
 }
 </style>

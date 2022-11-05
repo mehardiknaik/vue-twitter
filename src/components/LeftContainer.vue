@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="menu in test" :key="menu.title" class="infowrapper">
+    <div v-for="menu in data" :key="menu.title" class="infowrapper">
       <svg viewBox="0 0 24 24" aria-hidden="true" width='1.75rem'>
         <g>
           <path
@@ -18,7 +18,7 @@ export default {
   name: 'LeftContainer',
   data() {
     return {
-      test: [{ title: "Explore", logo: "logo" }, { title: "Setting", logo: "logo" }]
+      data: [{ title: "Explore", logo: "logo" }, { title: "Setting", logo: "logo" }]
     }
   }
 }
