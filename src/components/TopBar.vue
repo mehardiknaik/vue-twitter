@@ -9,6 +9,7 @@
                 </g>
             </svg>
         </div>
+        <div class="searchContainer"><input placeholder="Search"/></div>
     </header>
 </template>
   
@@ -22,7 +23,7 @@ export default {
 <style scoped>
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
@@ -31,7 +32,7 @@ header {
     top: 0px;
     left: auto;
     right: 0px;
-    padding: 16px;
+    padding: 5px;
     transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     box-shadow: none;
     backdrop-filter: blur(20px);
@@ -40,6 +41,18 @@ header {
     border-width: 0px 0px thin;
     background: rgba(255, 255, 255, 0.7);
     color: rgb(45, 56, 67);
+}
+.searchContainer{
+    flex:1;
+    text-align: center;
+}
+input{
+    width: 50%;
+    padding: 13px;
+    border-radius: 26px;
+    border: 1px solid #cdcdcd;
+    background: #f6f6f6;
+
 }
 </style>
   

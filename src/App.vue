@@ -1,7 +1,7 @@
 <template>
   <TopBar />
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   <div class="container">
     <LeftContainer />
     <CenterContainer />
@@ -11,7 +11,6 @@
 
 <script>
 import TopBar from './components/TopBar.vue';
-import HelloWorld from './components/HelloWorld.vue'
 import LeftContainer from "./components/LeftContainer.vue"
 import CenterContainer from "./components/CenterContainer.vue"
 import RightContainer from "./components/RightContainer.vue"
@@ -19,7 +18,6 @@ import RightContainer from "./components/RightContainer.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     TopBar,
     LeftContainer,
     CenterContainer,
@@ -47,5 +45,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 60% 1fr;
   margin-inline:1rem;
+  margin-top: 3px;
 }
 </style>
